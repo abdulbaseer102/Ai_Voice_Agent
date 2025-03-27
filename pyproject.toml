@@ -1,0 +1,22 @@
+[project]
+name = "voice-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abdulbaseer102", email = "147842675+abdulbaseer102@users.noreply.github.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "openai-agents[voice]>=0.0.6",
+    "python-dotenv>=1.0.1",
+    "sounddevice>=0.5.1",
+    "textual>=2.1.2",
+    "typing-extensions>=4.13.0",
+]
+[project.scripts]
+voice-agent = "voice_agent:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
